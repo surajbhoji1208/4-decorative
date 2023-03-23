@@ -1,0 +1,6 @@
+<h1 style="text-align: center;">output-parent works!</h1>
+<p style="margin-left: 900px;">{{name}}</p>
+<button (click)="send()">send data to child</button>
+<app-outputchild (data1)="Recieve($event) " [data2]="name1"></app-outputchild>
+
+
