@@ -1,3 +1,8 @@
-<p>child works!</p>
-<h2>data recieved:{{emp}}</h2>
+<h1>child component!</h1>
+<label for="">send data to parent</label>
+<input type="text" [(ngModel)]="sendchild" (keyup)="press()">
+<!-- <h1>{{sendchild}}</h1> -->
+<br>
+<label for="">recieve data from parent:{{parentInput2}}</label>
+
 

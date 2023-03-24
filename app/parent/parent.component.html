@@ -1,2 +1,6 @@
-<p>parent works!</p>
-<app-child [emp]="employee"></app-child>
+<h1>parent component</h1>
+<label for=""> send data to parent</label>
+<input type="text" [(ngModel)]="parentInput1">
+<br>    
+<label for="">data come from child {{childOutput2}}</label>
+<app-child [parentInput2]="parentInput1" (childOutput1)="getData($event)" ></app-child>
